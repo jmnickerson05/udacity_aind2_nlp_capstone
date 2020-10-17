@@ -13090,7 +13090,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
@@ -13105,7 +13105,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">collections</span>
@@ -13161,7 +13161,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tensorflow.python.client</span> <span class="kn">import</span> <span class="n">device_lib</span>
@@ -13187,14 +13187,14 @@ device_type: &#34;CPU&#34;
 memory_limit: 268435456
 locality {
 }
-incarnation: 12666682928777316648
+incarnation: 3986755452098134815
 , name: &#34;/gpu:0&#34;
 device_type: &#34;GPU&#34;
 memory_limit: 357433344
 locality {
   bus_id: 1
 }
-incarnation: 8722120348028768893
+incarnation: 13995361794300121447
 physical_device_desc: &#34;device: 0, name: Tesla K80, pci bus id: 0000:00:04.0&#34;
 ]
 </pre>
@@ -13216,7 +13216,7 @@ physical_device_desc: &#34;device: 0, name: Tesla K80, pci bus id: 0000:00:04.0&
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load English data</span>
@@ -13260,7 +13260,7 @@ physical_device_desc: &#34;device: 0, name: Tesla K80, pci bus id: 0000:00:04.0&
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sample_i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
@@ -13305,7 +13305,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">english_words_counter</span> <span class="o">=</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">([</span><span class="n">word</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">english_sentences</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span>
@@ -13373,7 +13373,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet , et
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tokenize</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -13449,7 +13449,7 @@ Sequence 3 in x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pad</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -13514,7 +13514,7 @@ Sequence 3 in x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">preprocess</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
@@ -13596,7 +13596,7 @@ You will begin by training four relatively simple architectures.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">logits_to_text</span><span class="p">(</span><span class="n">logits</span><span class="p">,</span> <span class="n">tokenizer</span><span class="p">):</span>
@@ -14051,7 +14051,7 @@ new jersey est est en en mois et il est est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PA
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_final</span><span class="p">(</span><span class="n">input_shape</span><span class="p">,</span> <span class="n">output_sequence_length</span><span class="p">,</span> <span class="n">english_vocab_size</span><span class="p">,</span> <span class="n">french_vocab_size</span><span class="p">):</span>
@@ -14068,9 +14068,11 @@ new jersey est est en en mois et il est est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PA
     <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
 <span class="c1">#     print(input_shape[1])</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Embedding</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">input_length</span><span class="o">=</span><span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Bidirectional</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">False</span><span class="p">)))</span>
+<span class="c1">#     model.add(Bidirectional(GRU(128, return_sequences=False)))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Bidirectional</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">False</span><span class="p">)))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">RepeatVector</span><span class="p">(</span><span class="n">output_sequence_length</span><span class="p">))</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Bidirectional</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">)))</span>
+<span class="c1">#     model.add(Bidirectional(GRU(128, return_sequences=True)))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Bidirectional</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">)))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">french_vocab_size</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">sparse_categorical_crossentropy</span><span class="p">,</span>
                   <span class="n">optimizer</span><span class="o">=</span><span class="n">Adam</span><span class="p">(</span><span class="n">learning_rate</span><span class="p">),</span>
@@ -14097,8 +14099,7 @@ new jersey est est en en mois et il est est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PA
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>15
-Final Model Loaded
+<pre>Final Model Loaded
 </pre>
 </div>
 </div>
@@ -14116,10 +14117,11 @@ Final Model Loaded
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">final_predictions</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x_tk</span><span class="p">,</span> <span class="n">y_tk</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="k">def</span> <span class="nf">final_predictions</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x_tk</span><span class="p">,</span> <span class="n">y_tk</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Gets predictions using the final model</span>
 <span class="sd">    :param x: Preprocessed English data</span>
@@ -14136,7 +14138,7 @@ Final Model Loaded
         <span class="n">english_vocab_size</span><span class="p">,</span>
         <span class="n">french_vocab_size</span>
     <span class="p">)</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">tmp_x</span><span class="p">,</span> <span class="n">preproc_french_sentences</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">35</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
 
     <span class="c1">## DON&#39;T EDIT ANYTHING BELOW THIS LINE</span>
     <span class="n">y_id_to_word</span> <span class="o">=</span> <span class="p">{</span><span class="n">value</span><span class="p">:</span> <span class="n">key</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">y_tk</span><span class="o">.</span><span class="n">word_index</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
@@ -14173,34 +14175,85 @@ Final Model Loaded
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>15
-Train on 110288 samples, validate on 27573 samples
-Epoch 1/10
-110288/110288 [==============================] - 24s 217us/step - loss: 2.9724 - acc: 0.4403 - val_loss: nan - val_acc: 0.4808
-Epoch 2/10
-110288/110288 [==============================] - 22s 202us/step - loss: 1.8897 - acc: 0.5292 - val_loss: nan - val_acc: 0.5655
-Epoch 3/10
-110288/110288 [==============================] - 22s 202us/step - loss: 1.5324 - acc: 0.6017 - val_loss: nan - val_acc: 0.6346
-Epoch 4/10
-110288/110288 [==============================] - 22s 202us/step - loss: 1.3175 - acc: 0.6462 - val_loss: nan - val_acc: 0.6579
-Epoch 5/10
-110288/110288 [==============================] - 22s 203us/step - loss: 1.1905 - acc: 0.6701 - val_loss: nan - val_acc: 0.6818
-Epoch 6/10
-110288/110288 [==============================] - 22s 203us/step - loss: 1.0828 - acc: 0.6943 - val_loss: nan - val_acc: 0.7065
-Epoch 7/10
-110288/110288 [==============================] - 22s 203us/step - loss: 0.9889 - acc: 0.7154 - val_loss: nan - val_acc: 0.7247
-Epoch 8/10
-110288/110288 [==============================] - 22s 203us/step - loss: 0.9047 - acc: 0.7340 - val_loss: nan - val_acc: 0.7425
-Epoch 9/10
-110288/110288 [==============================] - 22s 203us/step - loss: 0.8412 - acc: 0.7504 - val_loss: nan - val_acc: 0.7596
-Epoch 10/10
-110288/110288 [==============================] - 22s 203us/step - loss: 0.7805 - acc: 0.7686 - val_loss: nan - val_acc: 0.7773
+<pre>Train on 110288 samples, validate on 27573 samples
+Epoch 1/35
+110288/110288 [==============================] - 29s 263us/step - loss: 2.9015 - acc: 0.4591 - val_loss: nan - val_acc: 0.5001
+Epoch 2/35
+110288/110288 [==============================] - 28s 251us/step - loss: 1.9075 - acc: 0.5339 - val_loss: nan - val_acc: 0.5750
+Epoch 3/35
+110288/110288 [==============================] - 28s 251us/step - loss: 1.5270 - acc: 0.5922 - val_loss: nan - val_acc: 0.6129
+Epoch 4/35
+110288/110288 [==============================] - 28s 252us/step - loss: 1.3078 - acc: 0.6432 - val_loss: nan - val_acc: 0.6686
+Epoch 5/35
+110288/110288 [==============================] - 28s 252us/step - loss: 1.1566 - acc: 0.6834 - val_loss: nan - val_acc: 0.7045
+Epoch 6/35
+110288/110288 [==============================] - 28s 252us/step - loss: 1.0317 - acc: 0.7152 - val_loss: nan - val_acc: 0.7320
+Epoch 7/35
+110288/110288 [==============================] - 28s 252us/step - loss: 0.9255 - acc: 0.7418 - val_loss: nan - val_acc: 0.7541
+Epoch 8/35
+110288/110288 [==============================] - 28s 253us/step - loss: 0.8402 - acc: 0.7627 - val_loss: nan - val_acc: 0.7693
+Epoch 9/35
+110288/110288 [==============================] - 28s 252us/step - loss: 0.7609 - acc: 0.7819 - val_loss: nan - val_acc: 0.7895
+Epoch 10/35
+110288/110288 [==============================] - 28s 252us/step - loss: 0.6899 - acc: 0.8009 - val_loss: nan - val_acc: 0.8142
+Epoch 11/35
+110288/110288 [==============================] - 28s 253us/step - loss: 0.6206 - acc: 0.8210 - val_loss: nan - val_acc: 0.8313
+Epoch 12/35
+110288/110288 [==============================] - 28s 252us/step - loss: 0.5619 - acc: 0.8383 - val_loss: nan - val_acc: 0.8474
+Epoch 13/35
+110288/110288 [==============================] - 28s 253us/step - loss: 0.5031 - acc: 0.8562 - val_loss: nan - val_acc: 0.8667
+Epoch 14/35
+110288/110288 [==============================] - 28s 252us/step - loss: 0.4507 - acc: 0.8725 - val_loss: nan - val_acc: 0.8773
+Epoch 15/35
+110288/110288 [==============================] - 28s 253us/step - loss: 0.4031 - acc: 0.8871 - val_loss: nan - val_acc: 0.8956
+Epoch 16/35
+110288/110288 [==============================] - 28s 253us/step - loss: 0.3613 - acc: 0.9001 - val_loss: nan - val_acc: 0.8985
+Epoch 17/35
+110288/110288 [==============================] - 28s 253us/step - loss: 0.3252 - acc: 0.9109 - val_loss: nan - val_acc: 0.9155
+Epoch 18/35
+110288/110288 [==============================] - 28s 252us/step - loss: 0.2956 - acc: 0.9193 - val_loss: nan - val_acc: 0.9222
+Epoch 19/35
+110288/110288 [==============================] - 28s 253us/step - loss: 0.2639 - acc: 0.9283 - val_loss: nan - val_acc: 0.9285
+Epoch 20/35
+110288/110288 [==============================] - 28s 252us/step - loss: 0.2470 - acc: 0.9321 - val_loss: nan - val_acc: 0.9270
+Epoch 21/35
+110288/110288 [==============================] - 28s 252us/step - loss: 0.2266 - acc: 0.9376 - val_loss: nan - val_acc: 0.9345
+Epoch 22/35
+110288/110288 [==============================] - 28s 251us/step - loss: 0.2130 - acc: 0.9410 - val_loss: nan - val_acc: 0.9427
+Epoch 23/35
+110288/110288 [==============================] - 28s 251us/step - loss: 0.1933 - acc: 0.9469 - val_loss: nan - val_acc: 0.9455
+Epoch 24/35
+110288/110288 [==============================] - 28s 250us/step - loss: 0.1834 - acc: 0.9493 - val_loss: nan - val_acc: 0.9493
+Epoch 25/35
+110288/110288 [==============================] - 28s 250us/step - loss: 0.1675 - acc: 0.9541 - val_loss: nan - val_acc: 0.9530
+Epoch 26/35
+110288/110288 [==============================] - 28s 251us/step - loss: 0.1582 - acc: 0.9565 - val_loss: nan - val_acc: 0.9537
+Epoch 27/35
+110288/110288 [==============================] - 27s 246us/step - loss: 0.1512 - acc: 0.9581 - val_loss: nan - val_acc: 0.9546
+Epoch 28/35
+110288/110288 [==============================] - 27s 247us/step - loss: 0.1431 - acc: 0.9603 - val_loss: nan - val_acc: 0.9580
+Epoch 29/35
+110288/110288 [==============================] - 27s 249us/step - loss: 0.1333 - acc: 0.9631 - val_loss: nan - val_acc: 0.9571
+Epoch 30/35
+110288/110288 [==============================] - 27s 247us/step - loss: 0.1295 - acc: 0.9638 - val_loss: nan - val_acc: 0.9626
+Epoch 31/35
+110288/110288 [==============================] - 27s 247us/step - loss: 0.1230 - acc: 0.9657 - val_loss: nan - val_acc: 0.9609
+Epoch 32/35
+110288/110288 [==============================] - 27s 246us/step - loss: 0.1197 - acc: 0.9663 - val_loss: nan - val_acc: 0.9631
+Epoch 33/35
+110288/110288 [==============================] - 27s 246us/step - loss: 0.1108 - acc: 0.9690 - val_loss: nan - val_acc: 0.9649
+Epoch 34/35
+110288/110288 [==============================] - 27s 246us/step - loss: 0.1068 - acc: 0.9701 - val_loss: nan - val_acc: 0.9652
+Epoch 35/35
+110288/110288 [==============================] - 27s 245us/step - loss: 0.0977 - acc: 0.9728 - val_loss: nan - val_acc: 0.9671
 Sample 1:
 il a vu un vieux camion jaune &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 Il a vu un vieux camion jaune
 Sample 2:
-new jersey est généralement froid pendant l&#39;automne automne il il est en en &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
 new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt;
+CPU times: user 15min 33s, sys: 3min 36s, total: 19min 9s
+Wall time: 16min 13s
 </pre>
 </div>
 </div>
@@ -14254,7 +14307,7 @@ $ python -m nbconvert machine_translation.ipynb</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Save before you run this cell!</span>
@@ -14271,14 +14324,14 @@ $ python -m nbconvert machine_translation.ipynb</code></pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[42]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
 <pre>[&#39;[NbConvertApp] Converting notebook machine_translation.ipynb to html&#39;,
- &#39;[NbConvertApp] Writing 353656 bytes to machine_translation.html&#39;,
+ &#39;[NbConvertApp] Writing 351607 bytes to machine_translation.html&#39;,
  &#39;[NbConvertApp] Converting notebook machine_translation-zh.ipynb to html&#39;,
  &#39;[NbConvertApp] Writing 328614 bytes to machine_translation-zh.html&#39;]</pre>
 </div>
